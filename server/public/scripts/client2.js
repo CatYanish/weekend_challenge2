@@ -40,16 +40,19 @@ $('#submit').on('click', function() {
             //on server and then call the appropriate function using a switch statement.
     success: function(response) {
       console.log('posted some data');
+      $('#display-window').text('Computing...'); //changed from .answer
       //want to append the response to the DOM
-      $('.answer').append(response);
+      setTimeout(function(){
+        $('#display-window').text(response);  //changed from .answer
+      }, 3000);
+      // $('.answer').append(response);
     }
   }); //end of AJAX post function.
 
 }); //end of on click function
 
 $("#reset").on('click', function () {
-  $('#display-window').empty();
-  $('.answer').empty();
+  $('#display-window').text('');
 }); //end of reset on click function
 
 
