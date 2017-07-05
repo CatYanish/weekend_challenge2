@@ -3,34 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Weekend Challenge</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="views/main.css" />
     <script type="text/javascript" src="vendors/jquery.js"></script>
     <!-- <script type="text/javascript" src="scripts/client.js"></script> -->
     <script type="text/javascript" src="scripts/client2.js"></script>
   </head>
   <body>
-    <h1>Calculate!</h1>
+    <div class="header">
+    <h1>Hello, I am a calculator.</h1>
+    </div>
   </body>
   <div class="container">
     <!-- <input type="text" id="x">
     <input type="text" id="y"> -->
-    <p id="display-window"></p>
-    <button class="number-button" id="0">0</button>
-    <button class="number-button" id="1">1</button>
-    <button class="number-button" id="2">2</button>
-    <button class="number-button" id="3">3</button>
-    <button class="number-button" id="4">4</button>
-    <button class="number-button" id="5">5</button>
-    <button class="number-button" id="6">6</button>
-    <button class="number-button" id="7">7</button>
-    <button class="number-button" id="8">8</button>
-    <button class="number-button" id="9">9</button>
-     <p></p> <!-- This is shit, just for spacing -->
-    <button class="operator-button" id="add">add</button>
-    <button class="operator-button" id="subtract">subtract</button>
-    <button class="operator-button" id="multiply">multiply</button>
-    <button class="operator-button" id="divide">divide</button>
-    <button id="submit">=</button>
-    <button id="reset">Clear All and Reset</button>
+    <div class="result">
+      <p id="display-window"></p>
+    </div>
+    <div class="row">
+      <button class="number-button" id="7">7</button>
+      <button class="number-button" id="8">8</button>
+      <button class="number-button" id="9">9</button>
+      <button class="operator-button" id="divide">/</button>
+    </div>
+    <div class="row">
+      <button class="number-button" id="4">4</button>
+      <button class="number-button" id="5">5</button>
+      <button class="number-button" id="6">6</button>
+      <button class="operator-button" id="multiply">*</button>
+    </div>
+    <div class="row">
+      <button class="number-button" id="1">1</button>
+      <button class="number-button" id="2">2</button>
+      <button class="number-button" id="3">3</button>
+      <button class="operator-button" id="subtract">-</button>
+    </div>
+    <div class="last-row">
+      <button class="number-button" id="0">0</button>
+      <button id="submit">=</button>
+      <button id="reset">C</button>
+      <button class="operator-button" id="add">+</button>
+    </div>
   </div>
 </html>
